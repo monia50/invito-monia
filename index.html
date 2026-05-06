@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Monia — 50 anni</title>
+<meta property="og:title" content="Festa 50 anni Monia" />
+<meta property="og:description" content="Cinquant'anni non si festeggiano, si celebrano." />
+<meta property="og:image" content="https://monia50.github.io/invito-monia/header.png" />
+<meta property="og:url" content="https://monia50.github.io/invito-monia" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
 <style>
@@ -56,7 +62,7 @@
   /* HEADER */
   .header {
     background: var(--ink);
-    padding: 3rem 2.5rem 2.5rem;
+    padding: 0 0 2.5rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -336,6 +342,30 @@
     color: var(--ink-soft);
   }
 
+  .header-text {
+    padding: 2rem 2rem 0.5rem;
+    text-align: left;
+  }
+  .header-text p {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--cream-dark);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  .header-text p strong {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--cream);
+  }
+  .header-firma {
+    font-size: 16px !important;
+    color: var(--ink-muted) !important;
+    margin-top: 0.5rem !important;
+  }
+
   @media (max-width: 480px) {
     .header { padding: 2.5rem 1.75rem 2rem; }
     .header-name { font-size: 58px; }
@@ -351,11 +381,14 @@
   <div class="card">
 
     <div class="header">
-      <div class="header-eyebrow">vi invita a festeggiare</div>
-      <div class="header-name">Monia</div>
-      <div class="header-age">compie cinquant'anni</div>
-      <div class="gold-rule"><div class="diamond"></div></div>
-      <div class="header-tagline">Cinquant'anni non si festeggiano,<br>si celebrano.</div>
+      <img src="https://monia50.github.io/invito-monia/header.png" alt="Festa 50 anni Monia" style="width:100%; display:block; margin-bottom: 0;" />
+      <div class="header-text">
+        <p>Dicono che compiere 50 anni sia una cosa importante.</p>
+        <p>Io, sinceramente, avevo pensato di ignorare la questione.<br>Ma ormai la voce si è sparsa.</p>
+        <p><strong>Tanto vale festeggiare.</strong></p>
+        <p>Ti aspetto per una serata fatta di risate, musica e brindisi.</p>
+        <p class="header-firma">con amore, Monia</p>
+      </div>
     </div>
 
     <div class="body">
@@ -383,10 +416,10 @@
     </div>
 
     <div class="rsvp-wrap">
-      <div class="rsvp-title">Conferma la tua presenza</div>
+      <div class="rsvp-title">RSVP — Conferma la tua presenza</div>
       <div class="rsvp-form" id="rsvp-form">
         <input type="text" id="rsvp-name" placeholder="Il tuo nome" autocomplete="name" />
-        <input type="number" id="rsvp-guests" placeholder="Numero di persone" min="1" max="20" />
+        <input type="number" id="rsvp-guests" placeholder="Numero di persone (solo adulti)" min="1" max="20" />
         <div class="rsvp-btns">
           <button class="btn-yes" onclick="submitRsvp(true)">Ci sarò</button>
           <button class="btn-no" onclick="submitRsvp(false)">Non riesco</button>
@@ -401,7 +434,10 @@
     </div>
 
     <div class="footer">
-      <div class="footer-signature">Con amore, Monia</div>
+      <div class="footer-quote" style="font-family:'Cormorant Garamond',Georgia,serif; font-size:15px; font-style:italic; font-weight:300; color:var(--ink-soft); line-height:1.6;">
+        &laquo;L&rsquo;importante non &egrave; aggiungere anni alla vita,<br>ma vita agli anni&raquo;
+        <div style="font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--ink-muted); margin-top:6px; font-style:normal;">Rita Levi-Montalcini</div>
+      </div>
     </div>
 
   </div>
